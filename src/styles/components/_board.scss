@@ -1,0 +1,114 @@
+// initialization
+table {
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+caption {
+  padding: 10px;
+  padding-top: 0;
+  caption-side: top;
+  color: $shipt-green;
+  font-family: 'Bungee', cursive;
+}
+
+th {
+  background-color: transparent;
+  color: grey;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+td {
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+.padding {
+  padding: 20px;
+}
+
+.label {
+  height: 20px;
+  width: 20px;
+}
+
+.launchPad {
+  width: 220px;
+  height: 70px;
+  border: 2px dashed $light-grey;
+  margin: 50px auto 5px auto;
+  padding:10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.bg-boards {
+  padding: 20px;
+  background-color: lighten($light-grey, 20%);
+}
+
+.bg-lightgrey {
+  padding: 20px;
+  background-color: lighten($light-grey, 15%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+//drag and drop css
+.fill {
+  background-color: $shipt-grey;
+  cursor: grab;
+}
+
+.hold {
+  border: solid #ccc 4px;
+}
+
+.hovered {
+  background-color: $light-grey;
+}
+
+.invisible {
+  border: 1px dashed lighten($shipt-green, 10%);
+}
+
+// active and inactive
+.active {
+  height: 20px;
+  width: 20px;
+  background-color: $shipt-green;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.inactive {
+  @extend .active;
+  background-color: lighten($light-grey, 20%);
+}
+
+
+// cell styles
+.disable-click {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: lighten($light-grey, 15%);
+}
+
+.no-click {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.hit {
+  background-color: $shipt-green;
+}
+
+.hide {
+  visibility: hidden;
+}

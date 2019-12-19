@@ -1,0 +1,74 @@
+.ship {
+  margin: 3px;
+  display: inline-block;
+}
+
+.carrier {
+  @extend .ship;
+  width: 106px;
+  height: 17px;
+}
+
+.battleship {
+  @extend .ship;
+  width: 85px;
+  height: 17px;
+}
+
+.submarine {
+  @extend .ship;
+  width: 62px;
+  height: 17px;
+}
+
+.destroyer {
+  @extend .ship;
+  width: 39px;
+  height: 17px;
+}
+
+.cruiser {
+  @extend .ship;
+  width: 18px;
+  height: 17px;
+}
+
+.ship-fill {
+  background-color: $shipt-green;
+  border: 1px solid $dark-green;
+}
+
+.ship-hold {
+  background-color: $light-green;
+  border: 1px solid $shipt-green;
+}
+
+.ship-empty {
+  background-color: white;
+  border: 1px dashed $shipt-green;
+}
+
+.ship-shake {
+  animation:shake 0.8s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+

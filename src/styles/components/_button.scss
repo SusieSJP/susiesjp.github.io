@@ -1,0 +1,27 @@
+.btn {
+  background-color: lightgray;
+  margin: 20px;
+  padding: 5px 10px;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: darken($shipt-green, 10%);
+}
+
+.btn-active {
+  @extend .btn;
+  background-color: darken($shipt-green, 10%);
+  color: whitesmoke;
+}
+
+.btn-confirm {
+  @extend .btn;
+  font-size: 0.9rem;
+  color: black;
+  padding: 2px 8px;
+}
+
+.btn-disabled {
+  @extend .btn-confirm;
+  color: $shipt-grey;
+}

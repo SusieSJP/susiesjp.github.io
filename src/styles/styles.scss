@@ -1,0 +1,106 @@
+@import './base/colors';
+@import './components/button';
+@import './components/board';
+@import './components/ships';
+
+// display
+.row-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.row-display--center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row-display--around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// html elements
+body {
+  margin: 0;
+}
+
+form {
+  width: 50%;
+  margin: 0 atuo;
+}
+
+span {
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Teko', sans-serif;
+  color: darken($shipt-grey, 20%);
+  margin: 5px auto;
+}
+
+
+
+h1 {
+  font-family: 'Bungee', cursive;
+  margin-top: 40px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-family: 'Bungee', cursive;
+  color: darken($shipt-grey, 10%);
+  width: 265px;
+  display: inline-block;
+}
+
+.footer {
+  height: 50px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.heart {
+  color:#e25555;
+}
+
+
+.checkbox {
+  margin: 5px 5px 5px 50px;
+}
+
+.checkbox-label {
+  font-size: 0.7rem;
+  font-family: 'Teko', sans-serif;
+  color: $shipt-grey;
+}
+
+.highlight {
+  color: $shipt-green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Bungee', cursive;
+}
+
+.s-width {
+  width: 200px;
+  margin-top: 0;
+}
+
+.center-text {
+  text-align: center;
+}
